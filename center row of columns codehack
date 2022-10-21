@@ -1,0 +1,24 @@
+https://stackoverflow.com/questions/36672900/center-align-a-row-of-columns-in-bootstrap
+
+- Add new class "no-float" to the col.
+- Adjust .row properies as per below:
+
+<div class="row">
+      <div class="col-md-3 no-float">
+        <!--content-->
+      </div>
+      <div class="col-md-3">
+        <!--content-->
+      </div>
+</div>
+
+.row {
+    text-align:center;
+    margin: 0 auto;
+}
+
+.no-float {
+   display:inline-block;
+   vertical-align: middle;
+   float: none;
+}
